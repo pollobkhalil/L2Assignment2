@@ -17,12 +17,18 @@ app.use("/api/v1/vehicles", vehicleRoute);
 app.use("/api/v1/bookings", bookingsRoute);
 
 
-app.listen(5000, () =>{
+app.listen(5000, () => {
 
-    app.get('/', (req : Request, res : Response) =>{
+    app.get('/', (req: Request, res: Response) => {
         res.status(200).json({
-            message: "This is the root route",
-            path: req.path
+            message: "Welcome to the Vehicle Rental Backend API!",
+            status: "running",
+            available_routes: {
+                auth: "/api/v1/auth",
+                users: "/api/v1/users",
+                vehicles: "/api/v1/vehicles",
+                bookings: "/api/v1/bookings"
+            }
         })
     })
 
