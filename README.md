@@ -39,26 +39,29 @@ Authentication & Authorization
 
 # Setup & Usage
 
-1. Clone the repository
+Clone the repository
 git clone https://github.com/yourusername/vehicle-rental-system.git
 cd vehicle-rental-system
-2. Install dependencies
+
+Install dependencies
 bash
 Copy code
 npm install
-3. Create .env file
+
+Create .env file
 ini
 Copy code
 DATABASE_URL=your_neon_db_connection_string
 JWT_SECRET=your_jwt_secret_key
 PORT=5000
-4. Run the server 
+
+Run the server 
 bash
 Copy code
 npm run dev
 Server will start at: http://localhost:5000
 
-5. API Endpoints
+API Endpoints
 Auth
 POST /api/v1/auth/signup – Register new user
 
