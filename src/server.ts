@@ -4,6 +4,7 @@ import { initDB } from "./database/db";
 import { authRoute } from "./modules/auth/auth.route";
 import { vehicleRoute } from "./modules/vehicle/vehicle.route";
 import { bookingsRoute } from "./modules/bookings/bookings.route";
+import path from "path";
 
 const app = express();
 
@@ -16,6 +17,7 @@ initDB();
 app.get("/", (req: Request, res: Response) => {
   res.status(200).json({
     message: "Welcome to the Vehicle Rental Backend API!",
+    path:req.path,
     status: "running",
     available_routes: {
       auth: "/api/v1/auth",
