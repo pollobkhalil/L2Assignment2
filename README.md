@@ -1,6 +1,6 @@
 Vehicle Rental System
 
-
+live Url: https://l2-assignment2-two.vercel.app/
 
 # Features
 
@@ -91,12 +91,11 @@ GET /api/v1/bookings – Role-based view (Admin sees all, Customer sees own)
 
 PUT /api/v1/bookings/:bookingId – Update booking status (cancelled / returned)
 
-6. Deployment
+Deployment
 The project can be deployed on Vercel using the provided vercel.json.
-
 Ensure all environment variables are set in Vercel dashboard.
 
-7. Notes
+Notes
 Make sure Neon DB tables are created using initDB() before testing.
 All password fields are securely hashed.
 Role-based access is enforced using authentication middleware.
